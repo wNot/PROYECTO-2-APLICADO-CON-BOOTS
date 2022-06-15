@@ -1,0 +1,71 @@
+.main
+{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+    min-height: calc(100vh - 7rem);
+}
+
+.main__contacto
+{
+    display: block;
+    flex-direction: column;
+    margin: 50px 50px;
+    align-items: center;
+
+    ul
+    {
+        list-style-type: none;
+        gap: 2rem;
+        
+        li
+        {
+            padding: 10px; 
+        }
+    }
+}
+
+
+.inputtext
+{
+    height: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.295);
+    filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));
+}
+
+#btnenviar
+{
+    height: 2rem;
+    font: x-large;
+    filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
+
+    &:hover
+    {
+        animation: bounceIn ease-in-out;
+        animation-duration: 1s; 
+    }
+}
+
+#txtarea
+{
+    height: 400%;
+    border-radius: 2rem;
+}
+
+
+
+@media only screen and (max-device-width: 480px)
+{
+    .main
+    {
+       height: calc(100vh -7rem);
+    }
+}

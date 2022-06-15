@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+body
+{
+    background-image: url(https://i.ibb.co/5n6zVTt/GER-4352.jpg)
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+    color: whitesmoke;
+}
+.grid-container > *
+{
+    border-radius: 4px;
+    /* box-shadow: -1px 1px 7px 0px black; */
+}
+.grid-container
+{
+    display: grid;
+    grid-template: 
+    "header" 3rem
+    "main" auto
+    "footer" 4rem
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "./layout/header";
+@import "./layout/index";
+@import "./layout/sobrenosotros";
+@import "./layout/contacto";
+@import "./layout/fotos";
+@import "./layout/tienda";
+
+@import "./layout/footer";
