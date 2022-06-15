@@ -1,4 +1,4 @@
-.header_n > *
+.header > *
 {
     border-radius: 4px;
     /* box-shadow: -1px 1px 7px 0px black; */
@@ -50,6 +50,7 @@
     ul{
         display: flex;
         justify-content: space-evenly;
+        width: 100vw;
         li
         {
             display: inline-block;

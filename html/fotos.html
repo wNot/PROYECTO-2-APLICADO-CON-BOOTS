@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>KIBA-WEBPAGE</title>
@@ -28,7 +30,7 @@
         <nav class="navbar">
             <ul>
                 <div>
-                <li><a href="../index.html">INICIO</a></li>
+                <li class="text-light"><a href="../index.html">INICIO</a></li>
                 </div>
                 <div>
                     <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
@@ -51,7 +53,7 @@
 <main class="main">
 
     
-    <div class="main__fotos">
+    <!-- <div class="main__fotos">
 
         <div class="scale">
             <img class="main__foto" src="https://i.ibb.co/2Yx5Skh/GER-4352.jpg" alt="">
@@ -69,7 +71,33 @@
             <img class="main__foto" src="https://i.ibb.co/nmrhjRM/59022834-580973882389655-3743901371057831936-o.jpg" alt="">
             <img class="main__foto" src="https://i.ibb.co/wcxtKww/GER-4170.jpg" class="imghorizontal" alt=""> 
         </div>
-    </div>
+    </div> -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100 main__foto" src="https://i.ibb.co/vdDbZMT/GER-4272.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 main__foto" src="https://i.ibb.co/z2DWt3r/58733094-580973905722986-3606719041881767936-o.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 main__foto" src="https://i.ibb.co/kJ4w33H/GER-4212.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+      </div>
+
+
+
+
 </main>
 
 
@@ -83,6 +111,10 @@
     </div>
 </footer>
 
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
