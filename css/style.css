@@ -283,8 +283,10 @@ body {
 
 .main__foto {
   max-width: auto;
-  max-height: 500px;
-  border: solid rgba(44, 44, 44, 0.479) 2px;
+  /* max-height: 500px; */
+  max-height: auto;
+
+  border: solid rgba(44, 44, 44, 0.678) 2px;
   transition: all 3s ease-in-out; }
   .main__foto:hover {
     transform: scale(1.1);
