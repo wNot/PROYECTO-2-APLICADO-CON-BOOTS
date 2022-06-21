@@ -15,11 +15,9 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template: "header" 3rem
- "main" auto
- "footer" 4rem; }
+  grid-template: "header" 3rem "main" auto "footer" 4rem; }
 
-.header_n > * {
+.header > * {
   border-radius: 4px;
   /* box-shadow: -1px 1px 7px 0px black; */
   animation: fadeInDown ease;
@@ -54,14 +52,12 @@ body {
   .navbar ul {
     display: flex;
     justify-content: space-evenly;
-    width: 100%; 
-  margin-bottom: 0;}
+    width: 100vw; }
     .navbar ul li {
       display: inline-block;
       list-style-type: none; }
       .navbar ul li a {
-        text-decoration: none;
-        color: whitesmoke; }
+        text-decoration: none; }
         .navbar ul li a:hover {
           color: red;
           text-shadow: 2px 2px 10px;
@@ -185,9 +181,6 @@ body {
   text-align: center;
   animation: fadeInUp;
   animation-duration: 2s; }
-  .sn__titulos:hover {
-    animation: pulse;
-    animation-duration: 1s; }
 
 .sn__textos {
   background-color: rgba(0, 0, 0, 0.5);
@@ -283,14 +276,9 @@ body {
 
 .main__foto {
   max-width: auto;
-  /* max-height: 500px; */
-  max-height: auto;
-
-  border: solid rgba(44, 44, 44, 0.678) 2px;
+  max-height: 500px;
+  border: solid rgba(230, 0, 38, 0.678) 2px;
   transition: all 3s ease-in-out; }
-  .main__foto:hover {
-    transform: scale(1.1);
-    transition: all 1.5s ease-in-out; }
 
 .scale img {
   transition: all 2s ease-in-out;
