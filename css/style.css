@@ -397,36 +397,36 @@ a:hover {
   transform: scale(1.2, 1.2) rotate(5deg); }
 
 .section-products #product-1 .part-1::before {
-  background: url("../../assets/img/remera1.jpg") no-repeat center;
+  background: url("https://i.ibb.co/3ry3XvK/remera1.jpg") no-repeat center;
   background-size: cover;
   transition: all 0.3s; }
 
 .section-products #product-2 .part-1::before {
-  background: url("../../assets/img/gorra.jpg") no-repeat center;
+  background: url("https://i.ibb.co/CVJr1Vm/gorra.jpg") no-repeat center;
   background-size: cover; }
 
 .section-products #product-3 .part-1::before {
-  background: url("../../assets/img/llavero2.jpg") no-repeat center;
+  background: url("https://i.ibb.co/x3V036q/llavero2.jpg") no-repeat center;
   background-size: cover; }
 
 .section-products #product-4 .part-1::before {
-  background: url("../../assets/img/taza.jpg") no-repeat center;
+  background: url("https://i.ibb.co/G5yTynw/taza.jpg") no-repeat center;
   background-size: cover; }
 
 .section-products #product-5 .part-1::before {
-  background: url("../../assets/img/pines.jpg") no-repeat center;
+  background: url("https://i.ibb.co/R07cMJD/pines.jpg") no-repeat center;
   background-size: cover; }
 
 .section-products #product-6 .part-1::before {
-  background: url("../../assets/img/stickers.jpg") no-repeat center;
+  background: url("https://i.ibb.co/yfzd5PC/stickers.jpg") no-repeat center;
   background-size: cover; }
 
 .section-products #product-7 .part-1::before {
-  background: url("../../assets/img/cd.jpg") no-repeat center;
+  background: url("https://i.ibb.co/W3FH5c0/cd.jpg") no-repeat center;
   background-size: cover; }
 
 .section-products #product-8 .part-1::before {
-  background: url("../../assets/img/pases3.jpg") no-repeat center;
+  background: url("https://i.ibb.co/NS14kBC/pases3.jpg") no-repeat center;
   background-size: cover; }
 
 .section-products .single-product .part-1 .discount,
