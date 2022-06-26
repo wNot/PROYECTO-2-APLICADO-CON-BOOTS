@@ -51,6 +51,9 @@
         display: flex;
         justify-content: space-evenly;
         width: 100vw;
+        margin-bottom: 0;
+        padding-left: 0;
+        color: whitesmoke;
         li
         {
             display: inline-block;
@@ -58,6 +61,7 @@
             a
             {
                 text-decoration: none;
+                color: whitesmoke;
                 &:hover
                 {
                     color: red;
