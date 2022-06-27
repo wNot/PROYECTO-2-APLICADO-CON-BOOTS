@@ -49,5 +49,5 @@
 .mixinc3
 {
     @extend .botonredondo;
-    @include botones(whitesmoke,black);
+    @include botones(whitesmoke,rgb(20, 20, 20));
 }
