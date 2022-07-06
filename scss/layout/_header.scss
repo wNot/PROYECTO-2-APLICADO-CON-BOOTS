@@ -24,10 +24,10 @@
     animation-duration: 1s;
 }
 
-.vw
-{
-    width: 100vw;
-}
+// .vw
+// {
+//     width: 100vw;
+// }
 //////////////////////lOGO//////////////////
 .logo
 {
@@ -55,7 +55,7 @@
     ul{
         display: flex;
         justify-content: space-evenly;
-        width: 100vw;
+        width: 100%;
         margin-bottom: 0;
         padding-left: 0;
         color: whitesmoke;

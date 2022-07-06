@@ -35,9 +35,6 @@ body {
   animation: fadeInDown;
   animation-duration: 1s; }
 
-.vw {
-  width: 100vw; }
-
 .logo {
   grid-area: logo; }
   .logo:hover {
@@ -55,7 +52,7 @@ body {
   .navbar ul {
     display: flex;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 100%;
     margin-bottom: 0;
     padding-left: 0;
     color: whitesmoke; }
