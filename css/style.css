@@ -15,7 +15,9 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template: "header" 3rem "main" auto "footer" 4rem; }
+  grid-template: "header" 3rem
+ "main" auto
+ "footer" 4rem; }
 
 .header > * {
   border-radius: 4px;
@@ -560,3 +562,14 @@ a:hover {
       transform: scale(1.08);
       filter: drop-shadow(0 0 3px white);
       transition: all 1s ease; }
+
+
+
+.btncmprar
+{
+    background-color: red;
+    color: whitesmoke;
+    padding: 3px;
+    border-radius: 10px;
+    border-color: #0000;
+}
