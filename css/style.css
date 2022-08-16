@@ -505,6 +505,24 @@ a:hover {
   min-height: calc(100vh - 7rem);
   width: 100vw; }
 
+  .carrito {
+    background-color: rgba(0, 0, 0, 0.384);
+    box-shadow: -1px 1px 7px 0px black;
+    align-items: center;
+    justify-items: center;
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.466);
+    animation: fadeInDown;
+    animation-duration: 1s; }
+
+.inputprod
+{
+  color: black;
+  width: 40px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.801);
+}
+
 .main__mixin {
   display: flex;
   flex-direction: column;

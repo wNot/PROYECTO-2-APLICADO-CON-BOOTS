@@ -10,6 +10,12 @@ let btnPases = document.getElementById("btnPases");
 btnRemera.onclick = () =>
 {
     let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
+
+    while(isNaN(cantidadp))
+    {
+        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
+    }
+    
     agregarProducto("remera",cantidadp)
     alert(`listo! se agregó ${cantidadp} remera/s al carrito! `)
 }
@@ -17,20 +23,41 @@ btnRemera.onclick = () =>
 btnGorra.onclick = () =>
 {
     let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
+
+    while(isNaN(cantidadp))
+    {
+        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
+    }
+
     agregarProducto("gorra",cantidadp)
     alert(`listo! se agregó ${cantidadp} gorra/s al carrito! `)
 }
 
 btnLlavero.onclick = () =>
 {
-    let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
+    let cantidadp = parseInt(prompt("Ingrese la cantidad que desea comprar!"))
+
+
+    while(isNaN(cantidadp))
+    {
+        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
+    }
+
     agregarProducto("llavero",cantidadp)
     alert(`listo! se agregó ${cantidadp} llavero/s al carrito! `)
+    
+    
 }
 
 btnTaza.onclick = () =>
 {
     let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
+
+    while(isNaN(cantidadp))
+    {
+        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
+    }
+
     agregarProducto("taza",cantidadp)
     alert(`listo! se agregó ${cantidadp} taza/s al carrito! `)
 }
@@ -38,6 +65,12 @@ btnTaza.onclick = () =>
 btnPines.onclick = () =>
 {
     let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
+
+    while(isNaN(cantidadp))
+    {
+        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
+    }
+
     agregarProducto("pin",cantidadp)
     alert(`listo! se agregó ${cantidadp} pin/es al carrito! `)
 }
@@ -45,6 +78,12 @@ btnPines.onclick = () =>
 btnSticker.onclick = () =>
 {
     let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
+
+    while(isNaN(cantidadp))
+    {
+        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
+    }
+
     agregarProducto("sticker",cantidadp)
     alert(`listo! se agregó ${cantidadp} sticker/s al carrito! `)
 }
@@ -52,6 +91,12 @@ btnSticker.onclick = () =>
 btnDisco.onclick = () =>
 {
     let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
+
+    while(isNaN(cantidadp))
+    {
+        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
+    }
+
     agregarProducto("disco",cantidadp)
     alert(`listo! se agregó ${cantidadp} disco/s al carrito! `)
 }
@@ -59,6 +104,12 @@ btnDisco.onclick = () =>
 btnPases.onclick = () =>
 {
     let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
+
+    while(isNaN(cantidadp))
+    {
+        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
+    }
+
     agregarProducto("pase",cantidadp)
     alert(`listo! se agregó ${cantidadp} pase/s al carrito! `)
 }
