@@ -6,96 +6,72 @@ let btnPines = document.getElementById("btnPines");
 let btnSticker = document.getElementById("btnSticker");
 let btnDisco = document.getElementById("btnDisco");
 let btnPases = document.getElementById("btnPases");
-
 btnRemera.onclick = () =>
 {
-    let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
+    let inputp = document.getElementById("inputremera")
+    let cantidadp = inputp.value
 
-    while(isNaN(cantidadp))
-    {
-        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
-    }
-    
     agregarProducto("remera",cantidadp)
     alert(`listo! se agregó ${cantidadp} remera/s al carrito! `)
+    inputp.value = 1
 }
 
 btnGorra.onclick = () =>
 {
-    let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
-
-    while(isNaN(cantidadp))
-    {
-        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
-    }
+    let inputp = document.getElementById("inputgorra")
+    let cantidadp = inputp.value
 
     agregarProducto("gorra",cantidadp)
     alert(`listo! se agregó ${cantidadp} gorra/s al carrito! `)
+    inputp.value = 1
 }
 
 btnLlavero.onclick = () =>
 {
-    let cantidadp = parseInt(prompt("Ingrese la cantidad que desea comprar!"))
+    let inputp = document.getElementById("inputllavero")
+    let cantidadp = inputp.value
 
-
-    while(isNaN(cantidadp))
-    {
-        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
-    }
 
     agregarProducto("llavero",cantidadp)
     alert(`listo! se agregó ${cantidadp} llavero/s al carrito! `)
-    
+    inputp.value = 1
     
 }
 
 btnTaza.onclick = () =>
 {
-    let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
-
-    while(isNaN(cantidadp))
-    {
-        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
-    }
+    let inputp = document.getElementById("inputtaza")
+    let cantidadp = inputp.value
 
     agregarProducto("taza",cantidadp)
     alert(`listo! se agregó ${cantidadp} taza/s al carrito! `)
+    inputp.value = 1
 }
 
 btnPines.onclick = () =>
 {
-    let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
-
-    while(isNaN(cantidadp))
-    {
-        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
-    }
+    let inputp = document.getElementById("inputpines")
+    let cantidadp = inputp.value
 
     agregarProducto("pin",cantidadp)
     alert(`listo! se agregó ${cantidadp} pin/es al carrito! `)
+    inputp.value = 1
 }
 
 btnSticker.onclick = () =>
 {
-    let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
-
-    while(isNaN(cantidadp))
-    {
-        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
-    }
+    let inputp = document.getElementById("inputsticker")
+    let cantidadp = inputp.value
 
     agregarProducto("sticker",cantidadp)
     alert(`listo! se agregó ${cantidadp} sticker/s al carrito! `)
+    inputp.value = 1
 }
 
 btnDisco.onclick = () =>
 {
-    let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
-
-    while(isNaN(cantidadp))
-    {
-        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
-    }
+    let inputp = document.getElementById("inputdiscos")
+    let cantidadp = inputp.value
 
     agregarProducto("disco",cantidadp)
     alert(`listo! se agregó ${cantidadp} disco/s al carrito! `)
@@ -103,15 +79,12 @@ btnDisco.onclick = () =>
 
 btnPases.onclick = () =>
 {
-    let cantidadp = prompt("Ingrese la cantidad que desea comprar!")
-
-    while(isNaN(cantidadp))
-    {
-        cantidadp = prompt("Ingreso un valor incorrecto. Por favor Ingrese la cantidad que desea comprar!")
-    }
+    let inputp = document.getElementById("inputpases")
+    let cantidadp = inputp.value
 
     agregarProducto("pase",cantidadp)
     alert(`listo! se agregó ${cantidadp} pase/s al carrito! `)
+    inputp.value = 1
 }
 
 
