@@ -6,6 +6,8 @@ let btnPines = document.getElementById("btnPines");
 let btnSticker = document.getElementById("btnSticker");
 let btnDisco = document.getElementById("btnDisco");
 let btnPases = document.getElementById("btnPases");
+let cantprodcarrito= document.getElementById("cantprodcarrito");
+let arrayCarrito = [];
 btnRemera.onclick = () =>
 {
     let inputp = document.getElementById("inputremera")
@@ -14,6 +16,8 @@ btnRemera.onclick = () =>
     agregarProducto("remera",cantidadp)
     alert(`listo! se agregó ${cantidadp} remera/s al carrito! `)
     inputp.value = 1
+
+    cantprodcarrito.textContent = ` ${contarproductos()} `;
 }
 
 btnGorra.onclick = () =>
@@ -21,9 +25,15 @@ btnGorra.onclick = () =>
     let inputp = document.getElementById("inputgorra")
     let cantidadp = inputp.value
 
+    if(cantidadp > 0){
     agregarProducto("gorra",cantidadp)
     alert(`listo! se agregó ${cantidadp} gorra/s al carrito! `)
     inputp.value = 1
+    }
+    else
+    {
+        alert("Disculpe! no poseemos stock de este producto en este momento!")
+    }
 }
 
 btnLlavero.onclick = () =>
@@ -35,6 +45,8 @@ btnLlavero.onclick = () =>
     agregarProducto("llavero",cantidadp)
     alert(`listo! se agregó ${cantidadp} llavero/s al carrito! `)
     inputp.value = 1
+
+    cantprodcarrito.textContent = ` ${contarproductos()} `;
     
 }
 
@@ -46,6 +58,8 @@ btnTaza.onclick = () =>
     agregarProducto("taza",cantidadp)
     alert(`listo! se agregó ${cantidadp} taza/s al carrito! `)
     inputp.value = 1
+
+    cantprodcarrito.textContent = ` ${contarproductos()} `;
 }
 
 btnPines.onclick = () =>
@@ -56,6 +70,8 @@ btnPines.onclick = () =>
     agregarProducto("pin",cantidadp)
     alert(`listo! se agregó ${cantidadp} pin/es al carrito! `)
     inputp.value = 1
+
+    cantprodcarrito.textContent = ` ${contarproductos()} `;
 }
 
 btnSticker.onclick = () =>
@@ -66,6 +82,8 @@ btnSticker.onclick = () =>
     agregarProducto("sticker",cantidadp)
     alert(`listo! se agregó ${cantidadp} sticker/s al carrito! `)
     inputp.value = 1
+
+    cantprodcarrito.textContent = ` ${contarproductos()} `;
 }
 
 btnDisco.onclick = () =>
@@ -75,6 +93,8 @@ btnDisco.onclick = () =>
 
     agregarProducto("disco",cantidadp)
     alert(`listo! se agregó ${cantidadp} disco/s al carrito! `)
+
+    cantprodcarrito.textContent = ` ${contarproductos()} `;
 }
 
 btnPases.onclick = () =>
@@ -85,13 +105,30 @@ btnPases.onclick = () =>
     agregarProducto("pase",cantidadp)
     alert(`listo! se agregó ${cantidadp} pase/s al carrito! `)
     inputp.value = 1
+
+    cantprodcarrito.textContent = ` ${contarproductos()} `;
+
 }
 
 
 
 
 
-let arrayCarrito = [];
+
+function contarproductos()
+{
+    let contador = 0;
+    let contadorstr
+    arrayCarrito.forEach(producto => {
+
+        contador += parseInt(producto.cantidad)
+
+        
+    });
+    console.log(contador)
+    return contador;
+}
+
 
 function Gorra (cantidad)
 {
