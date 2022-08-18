@@ -6,6 +6,8 @@ let btnPines = document.getElementById("btnPines");
 let btnSticker = document.getElementById("btnSticker");
 let btnDisco = document.getElementById("btnDisco");
 let btnPases = document.getElementById("btnPases");
+
+let btncarrito = document.getElementById("btncarrito")
 let cantprodcarrito= document.getElementById("cantprodcarrito");
 let arrayCarrito = [];
 btnRemera.onclick = () =>
@@ -103,11 +105,16 @@ btnPases.onclick = () =>
     let cantidadp = inputp.value
 
     agregarProducto("pase",cantidadp)
-    alert(`listo! se agregó ${cantidadp} pase/s al carrito! `)
+    alert(`listo! se agregó ${cantidadp} pase/s al carrito!`)
     inputp.value = 1
 
     cantprodcarrito.textContent = ` ${contarproductos()} `;
 
+}
+
+btncarrito.onclick = () =>
+{
+    
 }
 
 
