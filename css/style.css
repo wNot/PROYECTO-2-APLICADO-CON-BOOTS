@@ -514,6 +514,7 @@ a:hover {
     border-top: 1px solid rgba(255, 255, 255, 0.466);
     animation: fadeInDown;
     animation-duration: 1s;
+    margin-bottom: 10px;
   }
 
   .carrito img
@@ -522,6 +523,12 @@ a:hover {
     height: 50px;
     margin: 10px;
     padding: 10px;
+  }
+
+  #btncarrito:hover
+  {
+    transition: 0.7s;
+    box-shadow: -1px 1px 7px 0px #fe302f;
   }
 
 .inputprod
