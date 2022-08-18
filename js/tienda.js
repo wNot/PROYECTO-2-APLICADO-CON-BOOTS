@@ -6,10 +6,11 @@ let btnPines = document.getElementById("btnPines");
 let btnSticker = document.getElementById("btnSticker");
 let btnDisco = document.getElementById("btnDisco");
 let btnPases = document.getElementById("btnPases");
-
 let btncarrito = document.getElementById("btncarrito")
 let cantprodcarrito= document.getElementById("cantprodcarrito");
 let arrayCarrito = [];
+
+////////////////////// BOTONES DE LA TIENDA //////////////////////
 btnRemera.onclick = () =>
 {
     let inputp = document.getElementById("inputremera")
@@ -112,16 +113,32 @@ btnPases.onclick = () =>
 
 }
 
+////////////////////// BOTON CARRITO //////////////////////
+//////////////////////(despues voy a agregar modal que muestre el carrito para poder borrar) //////////////////////
 btncarrito.onclick = () =>
 {
-    
+    guardarCarrito()
+}
+
+function guardarCarrito()
+
+{
+    console.log(arrayCarrito)
+    if(arrayCarrito.length==0)
+    {
+        alert("Tu carrito esta vacío")
+    }
+    else
+    {
+    localStorage.setItem("Tu Carrito", JSON.stringify(arrayCarrito))
+    alert("Se ha guardado tu carrito")
+    }
 }
 
 
 
 
-
-
+////////////////////// CONTADOR DE PRODUCTOS CARRITO //////////////////////
 function contarproductos()
 {
     let contador = 0;
@@ -136,6 +153,10 @@ function contarproductos()
     return contador;
 }
 
+
+
+
+////////////////////// PRODUCTOS //////////////////////
 
 function Gorra (cantidad)
 {
@@ -197,6 +218,9 @@ function PaseVip (cantidad)
         this.cantidad = cantidad;
 }
 
+
+
+////////////////////// AGREGAR PRODUCTO AL CARRITO //////////////////////
 function agregarProducto(productoid,cantidad)
 {
     switch(productoid)
