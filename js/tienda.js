@@ -28,15 +28,25 @@ btnGorra.onclick = () =>
     let inputp = document.getElementById("inputgorra")
     let cantidadp = inputp.value
 
-    if(cantidadp > 0){
-    agregarProducto("gorra",cantidadp)
-    alert(`listo! se agregó ${cantidadp} gorra/s al carrito! `)
-    inputp.value = 1
-    }
-    else
-    {
-        alert("Disculpe! no poseemos stock de este producto en este momento!")
-    }
+
+    // if(cantidadp > 0){
+    // agregarProducto("gorra",cantidadp)
+    // alert(`listo! se agregó ${cantidadp} gorra/s al carrito! `)
+    // inputp.value = 1
+    // }
+    // else
+    // {
+    //     alert("Disculpe! no poseemos stock de este producto en este momento!")
+    // }
+
+
+    ///////////////////////// APLIQUE LO DE ARRIBA ACA ABAJO EN TERNARIO ////////////////////////////////
+    cantidadp > 0 ? 
+    alert(`listo! se agregó ${cantidadp} gorra/s al carrito! `) 
+    :
+     alert("Disculpe! no poseemos stock de este producto en este momento!");
+
+     inputp.value = 1
 }
 
 btnLlavero.onclick = () =>
@@ -118,6 +128,7 @@ btnPases.onclick = () =>
 btncarrito.onclick = () =>
 {
     guardarCarrito()
+    console.log(...arrayCarrito)
 }
 
 function guardarCarrito()
@@ -236,6 +247,12 @@ function agregarProducto(productoid,cantidad)
             arrayCarrito.push(remera);
             console.log(remera);
             break;
+
+        case "gorra":
+            const gorra = new Gorra (cantidad);
+            arrayCarrito.push(gorra)
+            alert(`listo! se agregó ${cantidad} gorra/s al carrito! `)
+            console.log(gorra)
 
         case "llavero":
             const llavero = new Llavero (cantidad);
