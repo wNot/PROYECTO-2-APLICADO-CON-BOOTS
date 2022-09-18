@@ -10,6 +10,40 @@ let btncarrito = document.getElementById("btncarrito")
 let cantprodcarrito= document.getElementById("cantprodcarrito");
 let arrayCarrito = [];
 
+
+
+
+
+////////////////////////////////////NUEVO TEST///////////////////////////////////////
+class Producto 
+{
+    constructor(id,nombre,descripcion,precio,imagen)
+    {
+        this.id = id;
+        this.nombre= nombre;
+        this.descripcion=descripcion;
+        this.precio=precio;
+    }
+
+}
+
+// const Remeras = new Producto(1,Remeras,"Remera serigrafiada con logo",1699.99);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ////////////////////// BOTONES DE LA TIENDA //////////////////////
 btnRemera.onclick = () =>
 {
@@ -137,9 +171,26 @@ function guardarCarrito()
     else
     {
     localStorage.setItem("Tu Carrito", JSON.stringify(arrayCarrito))
-    Swal.fire({
-        title: "Carrito guardado!"
-    })
+
+    swal.fire(
+        {
+        title: "Quiere ir a Pagar?",
+        showCancelButton: true,
+        type:"warning",
+        confirmButtonClass: "btn-success",
+        cancelButtonClass: "btn-danger",
+        confirmButtonText: "SI, ir a pagar",
+        cancelButtonText: "Cancelar",
+        closeOnConfirm: true
+      
+      }).then(
+        function() 
+        {
+        window.location.href = "http://127.0.0.1:5500/html/carrito.html";
+        })
+    // Swal.fire({
+    //     title: "Carrito guardado!"
+    // })
     }
 }
 
@@ -292,3 +343,4 @@ function agregarProducto(productoid,cantidad)
         denyButtonText: `OK`,
     })
 }
+
